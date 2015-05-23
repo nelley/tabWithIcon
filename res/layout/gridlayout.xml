@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:rowOrderPreserved="true" 
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true" >
+    <GridLayout
+        android:id="@+id/gridLayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="1" >
+        <!-- (0,0) -->
+        <ImageView
+            android:contentDescription="@string/bktCourt"
+            android:id="@+id/bktCourt"
+            android:background="@drawable/bktcourt_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:scaleType="centerInside"
+            android:src="@drawable/court">
+        </ImageView>
+        <!-- (1,0) -->
+        <LinearLayout 
+            android:id="@+id/timescore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/normal_color"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:orientation="horizontal">
+            <include android:id="@+id/timescoreLayer" layout="@layout/timescore"/>
+        </LinearLayout>
+   </GridLayout>
+   <GridView
+       android:id="@+id/gridPlayer1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@drawable/normal_color"
+       android:gravity="center"
+       android:numColumns="3"
+       android:layout_marginBottom ="0dp"
+       android:verticalSpacing ="-5dp"
+       android:horizontalSpacing ="-30dp"
+       android:listSelector="@null"
+       android:layout_below="@+id/gridLayoutTop">
+    </GridView>
+    <GridView
+        android:id="@+id/gridPlayer2"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:background="@drawable/normal_color"
+        android:gravity="center"
+        android:numColumns="3"
+        android:layout_marginBottom ="0dp"
+        android:verticalSpacing ="-5dp"
+        android:horizontalSpacing ="-30dp"
+        android:listSelector="@null"
+        android:layout_toRightOf="@+id/gridPlayer1"
+        android:layout_below="@+id/gridLayoutTop">
+    </GridView>
+    <GridView
+        android:id="@+id/gridPlayer3"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:layout_marginBottom ="0dp"
+        android:verticalSpacing ="-5dp"
+        android:horizontalSpacing ="-30dp"
+        android:background="@drawable/line_color"
+        android:listSelector="@null"
+        android:gravity="center"
+        android:layout_below="@+id/gridPlayer1"
+         >
+    </GridView>
+    <GridView
+        android:id="@+id/gridPlayer4"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:layout_marginBottom ="0dp"
+        android:verticalSpacing ="-5dp"
+        android:horizontalSpacing ="-30dp"
+        android:background="@drawable/line_color"
+        android:listSelector="@null"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/gridPlayer3"
+        android:layout_below="@+id/gridPlayer2"
+        >
+    </GridView>
+    <GridView
+        android:id="@+id/gridPlayer5"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:layout_marginBottom ="0dp"
+        android:verticalSpacing ="-5dp"
+        android:horizontalSpacing ="-30dp"
+        android:listSelector="@null"
+        android:background="@drawable/normal_color"
+        android:gravity="center"
+        android:layout_below="@+id/gridPlayer3">
+    </GridView>
+   <LinearLayout
+        android:id="@+id/toplinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bktcourt_color"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gridPlayer4"
+        android:layout_toRightOf="@+id/gridPlayer3">
+        <ImageView
+            android:id="@+id/benchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/change_press" />
+        <ImageView
+            android:id="@+id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/icon" />
+        <ImageView
+            android:id="@+id/rival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/home" />
+        <ImageView
+            android:id="@+id/undo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/undo_press" />
+    </LinearLayout>
+</RelativeLayout>

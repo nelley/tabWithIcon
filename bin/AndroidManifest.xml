@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tabwithicon"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+    <supports-screens  
+        android:smallScreens="true"  
+        android:normalScreens="true"  
+        android:largeScreens="true"  
+        android:anyDensity="true" />  
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.example.test4.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    
+    <application
+        android:name="GlobalVariable"
+        android:icon="@drawable/icon"
+        android:label="tabWithIcon Sample">
+        <meta-data 
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version" />
+        <meta-data
+                android:name="com.google.android.maps.v2.API_KEY"
+                android:value="AIzaSyD8Rg8oLMQj35buOho8kPco1JmMs4Q5Gg0" />
+        <activity
+            android:name="com.example.tabwithicon.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/app_name" 
+            android:theme="@style/StyledIndicators">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.tabwithicon.checkinpage.CheckInActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.example.tabwithicon.recordboard.summaryActivity"
+            android:screenOrientation="landscape"
+            android:label="@string/app_name">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<num>9</num>
+<markers>
+<marker address="1521 1st Ave, Seattle, WA" id="1" lat="47.6089401" lng="-122.340141" name="Pan Africa Market" type="restaurant"/>
+<marker address="2222 2nd Ave, Seattle, WA" id="2" lat="47.6135902" lng="-122.344391" name="Buddha Thai &amp; Bar" type="bar"/>
+<marker address="14 Mercer St, Seattle, WA" id="3" lat="47.6245613" lng="-122.356445" name="The Melting Pot" type="restaurant"/>
+<marker address="1225 1st Ave, Seattle, WA" id="4" lat="47.6063652" lng="-122.337654" name="Ipanema Grill" type="restaurant"/>
+<marker address="2230 1st Ave, Seattle, WA" id="5" lat="47.6128235" lng="-122.345673" name="Sake House" type="bar"/>
+<marker address="1301 Alaskan Way, Seattle, WA" id="6" lat="47.6059608" lng="-122.340363" name="Crab Pot" type="restaurant"/>
+<marker address="2234 2nd Ave, Seattle, WA" id="7" lat="47.6139755" lng="-122.345467" name="Mamas Mexican Kitchen" type="bar"/>
+<marker address="1416 E Olive Way, Seattle, WA" id="8" lat="47.6172142" lng="-122.326584" name="Wingdome" type="bar"/>
+<marker address="1908 Pike pl, Seattle, WA" id="9" lat="47.6101265" lng="-122.342834" name="Piroshky Piroshky" type="restaurant"/>
+</markers>

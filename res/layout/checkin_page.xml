@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment
+	    android:id="@+id/map1"
+	    class="com.google.android.gms.maps.SupportMapFragment"
+	    android:layout_alignParentTop="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" >
+        
+    </fragment>
+    <Button
+        android:id="@+id/CheckInBtnL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_below="@+id/map1"
+        android:text="@string/report_root"
+        android:src="@drawable/basketicon">
+    </Button>
+    <Button
+        android:id="@+id/CheckInBtnC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/map1"
+        android:text="@string/add"
+        android:layout_toRightOf="@+id/CheckInBtnL"
+        android:src="@drawable/basketicon">
+    </Button>
+    <EditText
+        android:id="@+id/CheckInEditTextR"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:maxLength="10"
+        android:layout_below="@+id/map1"
+        android:layout_toRightOf="@+id/CheckInBtnC"
+        android:drawableLeft="@drawable/basketicon">
+        <requestFocus />
+    </EditText>
+
+    <ListView
+        android:id="@+id/ListView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CheckInBtnC"
+        android:divider="#000000"
+        android:paddingLeft="1dp" >
+    </ListView>
+
+</RelativeLayout  >

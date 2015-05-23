@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/timescoreLayer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+        <TextView 
+            android:id="@+id/timeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:text="Time">
+        </TextView >
+        <TextView 
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="36sp"
+            android:layout_below="@+id/timeTitle"
+            android:text="00:00:0">
+        </TextView >
+        <TextView 
+            android:id="@+id/scoreTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:layout_below="@+id/time"
+            android:text="Score">
+        </TextView >
+        <TextView 
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="36sp"
+            android:layout_below="@+id/scoreTitle"
+            android:text="00:00">
+        </TextView >
+
+</RelativeLayout>

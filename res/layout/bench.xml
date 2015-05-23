@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:rowOrderPreserved="true"
+    android:layout_gravity="bottom" >
+   <GridView
+       android:id="@+id/benchList"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:columnWidth="2dp"
+       android:background="@drawable/normal_color"
+       android:gravity="center"
+       android:horizontalSpacing="2dp"
+       android:numColumns="3"
+       android:layout_alignParentBottom="true">
+    </GridView>
+</RelativeLayout>

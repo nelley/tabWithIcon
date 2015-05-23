@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:rowOrderPreserved="true" 
+    android:gravity="center">
+        <ImageView
+            android:contentDescription="@string/bktCourt"
+            android:id="@+id/bktCourt"
+            android:background="@drawable/bktcourt_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/court">
+        </ImageView>
+</RelativeLayout>
